@@ -1,0 +1,265 @@
+:root {
+  --primary-color: rgb(15, 15, 176);
+  --background-color: #fefbf3;
+  --white: #ffffff;
+  --black: #000000;
+  --font-family-main: "roboto", sans-serif;
+  --font-family-cursive: "Playwrite AU QLD", cursive;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+/* ======= Navbar ======= */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 5px;
+  background: var(--primary-color);
+  height: 40px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 4em;
+  width: auto;
+  margin: 15px 20px;
+}
+
+.navbar-title a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--font-family-main);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.navbar-links {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  justify-content: center;
+  margin: 0 -30px 0 25px;
+  gap: 10%;
+}
+
+.navbar-links li a {
+  color: var(--white);
+  font-family: var(--font-family-main);
+  font-size: 1.5rem;
+  font-weight: 650;
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-links li a:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.login-btn {
+  background-color: var(--white);
+  border: none;
+  border-radius: 8px;
+  color: var(--black);
+  cursor: pointer;
+  font-family: var(--font-family-main);
+  font-size: 1.3rem;
+  font-weight: 650;
+  margin-right: 15px;
+  padding: 15px 40px;
+  text-decoration: none;
+}
+
+/* ======= Hamburger Menu ======= */
+.burger-menu {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  justify-content: center;
+  margin: 0 25px 0 31px;
+  width: 50px;
+}
+
+.line {
+  background: var(--white);
+  border-radius: 4px;
+  height: 5px;
+  margin: 6px 0;
+  width: 60px;
+}
+
+/* ======= Hero Section ======= */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50vh;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.hero-image-container {
+  align-items: center;
+  display: flex;
+  flex: 0 0 65%;
+  justify-content: center;
+}
+
+.hero-image {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.hero-text {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 35%;
+  justify-content: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.hero-text h1 {
+  color: var(--black);
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  color: var(--black);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* ======= Welcome Banner ======= */
+.welcome-banner {
+  align-items: center;
+  background-color: var(--primary-color);
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+}
+
+.welcome-banner-text {
+  color: var(--white);
+  font-family: var(--font-family-cursive);
+  font-size: 3.8vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* ======= Featured Schools Section ======= */
+.featured-section {
+  background: var(--background-color);
+  display: flex;
+  flex-direction: row;
+  height: 42vh;
+}
+
+.featured-schools {
+  display: flex;
+}
+
+.featured-info {
+  align-items: center;
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-count {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.featured-image {
+  width: 700px;
+}
+
+.featured-text {
+  color: var(--black);
+  font-family: var(--font-family-main);
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.featured-number {
+  font-family: var(--font-family-cursive);
+  font-size: 5rem;
+  font-weight: bold;
+  margin-right: 7vw;
+}
+
+.featured-button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--white);
+  cursor: pointer;
+  font-family: var(--font-family-main);
+  font-size: 1.5rem;
+  font-weight: 650;
+  padding: 15px 40px;
+  text-decoration: none;
+}
+
+/* ======= Carousel Section ======= */
+/* Decorative container */
+.carousel-container {
+  position: relative;
+  width: 65vh;   /* adjust as needed */
+  height: 42vh;
+  background: url("C:/Users/Naman/Downloads/CODE/Career Compass/Images/background.png") center/cover no-repeat;
+  overflow: hidden;
+
+}
+
+/* Slider track */
+.carousel-track {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  height: 100%;
+}
+
+/* Each logo slide */
+.carousel-slide {
+  flex: 0 0 100%;
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.5));
+  transition: transform 0.3s;
+}
+
+.carousel-slide img:hover {
+  transform: scale(1.05);
+}
